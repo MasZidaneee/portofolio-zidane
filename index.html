@@ -15,74 +15,68 @@
     <style>
       body {
         background-color: #fff;
-        position: relative;
         overflow-x: hidden;
       }
-
       .blob {
         position: absolute;
         border-radius: 50%;
-        opacity: 0.5;
+        opacity: 0.4;
         z-index: 0;
+        filter: blur(30px);
       }
     </style>
   </head>
-  <body class="font-sans text-gray-800">
+  <body class="font-sans text-gray-800 relative">
     <!-- Background Blobs -->
-    <span class="blob w-3 h-3 bg-red-400 top-10 left-4"></span>
-    <span class="blob w-2 h-2 bg-cyan-400 top-20 left-40"></span>
-    <span class="blob w-2 h-2 bg-purple-400 top-52 left-1/2"></span>
-    <span class="blob w-2 h-2 bg-yellow-300 top-2/3 left-2/3"></span>
-    <span class="blob w-2 h-2 bg-blue-400 bottom-10 left-1/4"></span>
+    <span class="blob w-40 h-40 bg-red-400 top-10 left-4"></span>
+    <span class="blob w-24 h-24 bg-cyan-400 top-20 left-40"></span>
+    <span class="blob w-24 h-24 bg-purple-400 top-52 left-1/2"></span>
+    <span class="blob w-20 h-20 bg-yellow-300 top-2/3 left-2/3"></span>
+    <span class="blob w-20 h-20 bg-blue-400 bottom-10 left-1/4"></span>
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center py-4 px-8 border-b">
-      <h1 class="text-xl font-semibold text-blue-600">&nbsp;</h1>
-      <ul class="flex space-x-8 text-sm font-medium">
+    <nav class="flex justify-between items-center py-4 px-8 border-b sticky top-0 bg-white shadow-sm z-50">
+      <h1 class="text-xl font-bold text-blue-600">Zidane</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
         <li><a href="#" class="text-blue-600 border-b-2 border-blue-500">Home</a></li>
-        <li><a href="#" class="hover:text-blue-600">About</a></li>
-        <li><a href="#" class="hover:text-blue-600">Experience</a></li>
-        <li><a href="#" class="hover:text-blue-600">Project</a></li>
-        <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+        <li><a href="#project" class="hover:text-blue-600">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto relative z-10">
       <!-- Text Content -->
-      <div class="md:w-1/2 space-y-6">
+      <div class="md:w-1/2 space-y-6 animate-fadeIn">
         <p class="text-sm text-gray-500">Welcome to My Portfolio Website</p>
         <h2 class="text-4xl md:text-5xl font-bold leading-tight">
-          Hi! I'm Adam Nur Zidane,<br />a Data Scientist, Laravel Developer
+          Hi! I'm Adam Nur Zidane,<br />
+          <span class="text-blue-600">Data Scientist</span> & <span class="text-purple-600">Laravel Developer</span>
         </h2>
 
         <!-- Buttons -->
         <div class="flex space-x-4">
           <a
             href="#"
-            class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition"
+            class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition flex items-center gap-2"
           >
-            Download CV
+            <i class="fas fa-download"></i> Download CV
           </a>
           <a
-            href="#"
-            class="border border-blue-600 text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-blue-50 transition"
+            href="#project"
+            class="border border-blue-600 text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-blue-50 transition flex items-center gap-2"
           >
-            View Portfolio
+            <i class="fas fa-folder-open"></i> View Portfolio
           </a>
         </div>
 
         <!-- Social Icons -->
-        <div class="flex space-x-4 pt-4">
-          <a href="#" class="text-black hover:text-blue-600 text-xl"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#" class="text-black hover:text-blue-600 text-xl"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="#" class="text-black hover:text-blue-600 text-xl"
-            ><i class="fab fa-instagram"></i
-          ></a>
+        <div class="flex space-x-4 pt-4 text-2xl">
+          <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-gray-600 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
