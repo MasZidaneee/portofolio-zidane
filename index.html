@@ -1,69 +1,101 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zidane Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Adam Nur Zidane</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #fff;
+        position: relative;
+        overflow-x: hidden;
+      }
 
-  <!-- ===== Navbar ===== -->
-  <nav>
-    <div class="container">
-      <h1 class="logo">Adam Nur Zidane</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.5;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Background Blobs -->
+    <span class="blob w-3 h-3 bg-red-400 top-10 left-4"></span>
+    <span class="blob w-2 h-2 bg-cyan-400 top-20 left-40"></span>
+    <span class="blob w-2 h-2 bg-purple-400 top-52 left-1/2"></span>
+    <span class="blob w-2 h-2 bg-yellow-300 top-2/3 left-2/3"></span>
+    <span class="blob w-2 h-2 bg-blue-400 bottom-10 left-1/4"></span>
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-4 px-8 border-b">
+      <h1 class="text-xl font-semibold text-blue-600">&nbsp;</h1>
+      <ul class="flex space-x-8 text-sm font-medium">
+        <li><a href="#" class="text-blue-600 border-b-2 border-blue-500">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li><a href="#" class="hover:text-blue-600">Experience</a></li>
+        <li><a href="#" class="hover:text-blue-600">Project</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ===== Home ===== -->
-  <section id="home" class="section">
-    <h2>Hi, saya Adam Nur Zidane 👋</h2>
-    <p>Mahasiswa | Web Developer | Data enthusiast</p>
-  </section>
+    <!-- Hero Section -->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto relative z-10">
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-6">
+        <p class="text-sm text-gray-500">Welcome to My Portfolio Website</p>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          Hi! I'm Adam Nur Zidane,<br />a Data Scientist, Laravel Developer
+        </h2>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Saya adalah mahasiswa Universitas Mercu Buana yang tertarik dalam bidang Web Development dan Komunikasi. Berpengalaman membuat website dengan Laravel dan React.</p>
-  </section>
+        <!-- Buttons -->
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition"
+          >
+            Download CV
+          </a>
+          <a
+            href="#"
+            class="border border-blue-600 text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-blue-50 transition"
+          >
+            View Portfolio
+          </a>
+        </div>
 
-  <!-- ===== Experience ===== -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li>Intern Laravel Developer – Portal Berita 2025</li>
-      <li>Public Relations – MBEC 2024</li>
-      <li>Teknisi – Open House MBEC</li>
-    </ul>
-  </section>
+        <!-- Social Icons -->
+        <div class="flex space-x-4 pt-4">
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>✔ Portal Berita Laravel + Tailwind</li>
-      <li>✔ Bot Discord GenZ (Python)</li>
-      <li>✔ Website KuyHijrah (Figma + React + Laravel)</li>
-    </ul>
-  </section>
-
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: adamnurzidane025@gmail.com</p>
-    <p>Instagram: @dammnz_</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Adam Nur Zidane. All rights reserved.</p>
-  </footer>
-</body>
+      <!-- Image -->
+      <div class="md:w-1/2 flex justify-center md:justify-end mb-12 md:mb-0">
+        <div class="w-72 h-72 bg-white rounded-2xl shadow-xl transform rotate-3">
+          <img
+            src="assets/profile.png"
+            alt="profile"
+            class="rounded-full w-72 h-72 object-cover border-4 border-blue-100 transform -rotate-3"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
